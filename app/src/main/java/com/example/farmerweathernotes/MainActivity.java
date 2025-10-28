@@ -24,17 +24,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializeUI() {
-        // Set up offline indicator
         offlineIndicator = findViewById(R.id.offlineIndicator);
 
-        // Create main layout
         LinearLayout mainLayout = findViewById(R.id.mainLayout);
         mainLayout.setBackgroundColor(Color.parseColor("#F5F5F5"));
 
-        // Create cards for different sections
         createLocationCard();
         createNotesCard();
         createTipsCard();
+        createViewDataCard();
     }
 
     private void createLocationCard() {
@@ -87,6 +85,24 @@ public class MainActivity extends AppCompatActivity {
 
         tipsBtn.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, TipsActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void createViewDataCard() {
+        CardView viewDataCard = findViewById(R.id.viewDataCard);
+        viewDataCard.setCardBackgroundColor(Color.WHITE);
+        viewDataCard.setCardElevation(8);
+        viewDataCard.setRadius(16);
+
+        Button viewDataBtn = findViewById(R.id.viewDataBtn);
+        viewDataBtn.setBackgroundColor(Color.parseColor("#9C27B0"));
+        viewDataBtn.setTextColor(Color.WHITE);
+        viewDataBtn.setTextSize(18);
+        viewDataBtn.setAllCaps(false);
+
+        viewDataBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ViewDataActivity.class);
             startActivity(intent);
         });
     }

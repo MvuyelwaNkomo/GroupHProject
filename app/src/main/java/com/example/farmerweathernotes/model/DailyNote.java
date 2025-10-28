@@ -24,7 +24,6 @@ public class DailyNote {
     private String activity;
     private String comments;
 
-
     public DailyNote() {}
 
     public DailyNote(int locationId, Date date, String rainObs, String activity, String comments) {
@@ -35,7 +34,6 @@ public class DailyNote {
         this.comments = comments;
     }
 
-    // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public int getLocationId() { return locationId; }

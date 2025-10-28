@@ -119,7 +119,6 @@ public class NotesActivity extends AppCompatActivity {
     }
 
     private void shareNotes() {
-        // Implementation for sharing notes as text
         Intent shareIntent = new Intent(Intent.ACTION_SEND);
         shareIntent.setType("text/plain");
         shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Farm Weather Notes");

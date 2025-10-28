@@ -51,6 +51,11 @@ public class LocationProfile implements Parcelable {
     public void setLongitude(double longitude) { this.longitude = longitude; }
 
     @Override
+    public String toString() {
+        return name;
+    }
+
+    @Override
     public int describeContents() { return 0; }
 
     @Override

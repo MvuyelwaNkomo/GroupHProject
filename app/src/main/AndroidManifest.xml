@@ -16,6 +16,20 @@
         android:theme="@style/Theme.FarmerWeatherNotes"
         tools:targetApi="31">
         <activity
+            android:name=".ViewDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TipsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditNoteActivity" />
+        <activity
+            android:name=".NotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -23,8 +37,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LocationActivity" />
-        <activity android:name=".NotesActivity" />
-        <activity android:name=".TipsActivity" />
     </application>
 </manifest>

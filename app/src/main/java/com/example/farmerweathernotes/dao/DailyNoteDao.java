@@ -32,4 +32,7 @@ public interface DailyNoteDao {
 
     @Query("SELECT * FROM daily_notes WHERE locationId = :locationId ORDER BY date DESC LIMIT :limit")
     List<DailyNote> getLatestNotes(int locationId, int limit);
+
+    @Query("DELETE FROM daily_notes WHERE locationId = :locationId")
+    void deleteNotesByLocation(int locationId);
 }

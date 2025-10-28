@@ -93,7 +93,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/tipsCard"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,6 +116,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="View Tips Library"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/viewDataCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Farm Data"
+                android:textSize="20sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/viewDataBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View All Data"
                 android:textSize="16sp" />
 
         </LinearLayout>
